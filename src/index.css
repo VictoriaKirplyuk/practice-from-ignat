@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://img.freepik.com/free-photo/stars-and-galaxy-outer-space-sky-night-universe-black-starry-background-of-shiny-starfield_146539-2085.jpg?size=626&ext=jpg');
 }
 
 code {

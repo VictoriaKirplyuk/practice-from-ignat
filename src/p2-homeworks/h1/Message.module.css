@@ -1,0 +1,71 @@
+.dialog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+
+.messageForm {
+    display: flex;
+    align-items: flex-end;
+    margin: 15px;
+}
+
+.avatar {
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.messageWindow {
+    border-radius: 5px 5px 5px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.name {
+    color: black;
+    font-weight: bold;
+}
+
+.text {
+    color: black;
+    min-width: 150px;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+.time {
+    color: grey;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 18px solid #F0F8FF;
+    border-bottom: 1px solid transparent;
+    border-right-color: rgba(255, 255, 255, 0.8);
+}
+
+.sms {
+    display: flex;
+    margin: 5px;
+}
+
+.form {
+}
+
+.textarea {
+    width: 250px; /* Ширина поля в процентах */
+    height: 50px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+    max-width: 50%;
+}
+
+.sendButton {
+
+}
+
+.messagesList {
+
+}
