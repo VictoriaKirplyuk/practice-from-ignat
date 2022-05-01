@@ -1,3 +1,26 @@
-.someClass {
+.item {
+    display: grid;
+    margin-left: 5px;
+    width: 200px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 10px 10px 10px;
+    grid-template-areas: "name priority button"
+    "name priority button"
+}
 
+.affairName {
+    grid-area: name;
+    justify-self: start;
+    color: white;
+}
+
+.affairPriority {
+    grid-area: priority;
+    justify-items: center;
+    color: white;
+}
+
+.deleteButton {
+    grid-area: button;
+    justify-self: start;
 }

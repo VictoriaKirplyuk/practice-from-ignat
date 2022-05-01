@@ -1,7 +1,18 @@
-.someClass {
+.form {
+    margin: 5px;
+}
 
+.inputError {
+  border: 3px solid red;
 }
 
 .error {
-    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+}
+
+.usersCount {
+    color: white;
+    font-weight: bold;
+    padding: 5px;
 }
