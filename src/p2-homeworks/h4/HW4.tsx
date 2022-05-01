@@ -22,7 +22,7 @@ function HW4() {
     return (
         <div>
             <hr/>
-            homeworks 4
+            <div style={{color: '#800080', fontWeight: 'bold', marginBottom:"30px"}}>homeworks 4</div>
 
             <div className={s.column}>
                 <SuperInputText
@@ -30,29 +30,34 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    spanClassName={s.testSpanError}
+                />
+                <SuperInputText
+                    className={s.superInput} //проверьте, рабоет ли смешивание классов
                 />
 
-                <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
-                />
 
                 {/*----------------------------------------------------*/}
 
-                <SuperButton>
-                    default
-                </SuperButton>
+                <div>
+                    <SuperButton>
+                        submit
+                    </SuperButton>
+                </div>
+                <div>
+                    <SuperButton
+                        red // пропсу с булевым значением не обязательно указывать true
+                        onClick={showAlert}
+                    >
+                        delete {/*// название кнопки попадёт в children*/}
+                    </SuperButton>
+                </div>
+                <div>
+                    <SuperButton disabled>
+                        disabled
+                    </SuperButton>
+                </div>
 
-                <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
-                    onClick={showAlert}
-                >
-                    delete {/*// название кнопки попадёт в children*/}
-                </SuperButton>
-
-                <SuperButton disabled>
-                    disabled
-                </SuperButton>
 
                 {/*----------------------------------------------------*/}
 

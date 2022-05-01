@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const PATH = {
-    PRE_JUNIOR: '/pre-junior',
+    //PRE_JUNIOR: '/pre-junior',
     // add paths
 }
 

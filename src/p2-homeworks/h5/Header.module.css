@@ -1,0 +1,29 @@
+.nav {
+    display: flex;
+    width: 400px;
+
+    transition-duration: 1000ms;
+    transform: translate(-330px);
+}
+
+.link {
+    text-decoration: none;
+    padding-right: 15px;
+    margin: 10px;
+}
+
+.menuButton {
+    background-image: url('http://icons.iconarchive.com/icons/iron-devil/ids-3d-icons-20/32/Hamburger-icon.png');
+    width: 32px;
+    height: 32px;
+}
+
+.nav:hover {
+    transition-duration: 1000ms;
+    transform: translate(0);
+}
+
+.active {
+    color: red;
+}
+

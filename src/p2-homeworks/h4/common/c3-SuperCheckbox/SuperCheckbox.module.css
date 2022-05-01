@@ -1,7 +1,10 @@
 .checkbox {
-
+    zoom: 1.3;
 }
 
 .spanClassName {
-
+    color: white;
+    padding: 5px;
+    font-weight: lighter;
 }
+

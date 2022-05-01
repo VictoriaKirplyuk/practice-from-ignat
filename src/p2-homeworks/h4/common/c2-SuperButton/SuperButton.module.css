@@ -1,7 +1,39 @@
 .default {
+    width: 90px;
+    height: 30px;
+    margin: 5px;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: DarkSlateGrey;
+    color: black;
+    padding: 5px 15px;
+    font-size: 16px;
+    box-shadow: 0 2px #696969
+}
 
+.default:hover {
+    background: #778899;
+}
+
+.default:disabled {
+    background: #C0C0C0;
+    color: #696969;
 }
 
 .red {
-    background: red;
+    width: 90px;
+    height: 30px;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    padding: 5px 15px;
+    font-size: 16px;
+    background: #800000;
+    box-shadow: 0 2px #696969
+}
+
+.red:hover {
+    background: #A52A2A;
 }

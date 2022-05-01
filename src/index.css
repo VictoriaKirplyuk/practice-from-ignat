@@ -1,11 +1,14 @@
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://img.freepik.com/free-photo/stars-and-galaxy-outer-space-sky-night-universe-black-starry-background-of-shiny-starfield_146539-2085.jpg?size=626&ext=jpg');
+  background-image: url('https://klike.net/uploads/posts/2019-06/1561182942_2.jpg');
+  background-size: 100%;
 }
 
 code {

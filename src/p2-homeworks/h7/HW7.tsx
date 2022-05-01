@@ -10,7 +10,7 @@ function HW7() {
     return (
         <div>
             <hr/>
-            homeworks 7
+            <div style={{color: '#800080', fontWeight: 'bold', marginBottom:"30px"}}>homeworks 7</div>
 
             {/*should work (должно работать)*/}
             <div>
