@@ -5,6 +5,7 @@
     background: #D3D3D3;
     padding: 10px;
     outline: none;
+    height: 10px;
 }
 
 .superInput:focus {
@@ -22,6 +23,7 @@
     background: #D3D3D3;
     padding: 10px;
     outline: none;
+    height: 10px;
 }
 
 .error {

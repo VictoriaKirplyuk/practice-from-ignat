@@ -1,5 +1,7 @@
-import React, {useState} from "react"
+import React, {ChangeEvent, useState} from "react"
 import {RequestAPI} from "./RequestAPI";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import SuperCheckbox from "../h4/common/c3-SuperCheckbox/SuperCheckbox";
 
 type ResponseType = {
     ok: boolean
@@ -16,7 +18,7 @@ function Request() {
     const [info, setInfo] = useState<ResponseType>()
 
     function request() {
-        if(checked) {
+        if (checked) {
             RequestAPI.firstRequest(checked)
                 .then(res => {
                     console.log(res)
@@ -34,12 +36,14 @@ function Request() {
                 .catch(error => {
                     console.log({...error});
                     console.log(error.response ? error.response.data.errorText : error.message);
-                    setInfo({ ok: error.ok,
+                    setInfo({
+                        ok: error.ok,
                         redirected: error.redirected,
                         status: error.status,
                         statusText: error.statusText,
                         type: error.type,
-                        url: error.url})
+                        url: error.url
+                    })
                 })
         }
 
@@ -48,18 +52,16 @@ function Request() {
     return (<div>
         <span style={{color: "white"}}>{info && JSON.stringify(info)}</span>
         <div>
-            {/*<Button variant="contained"*/}
-            {/*        color="secondary"*/}
-            {/*        size="small"*/}
-            {/*        onClick={request}>*/}
-            {/*    CLICK*/}
-            {/*</Button>*/}
-            {/*<Checkbox*/}
-            {/*    checked={checked}*/}
-            {/*    onChange={(e: ChangeEvent<HTMLInputElement>) => {*/}
-            {/*        setChecked(e.currentTarget.checked)*/}
-            {/*    }}*/}
-            {/*/>*/}
+            <SuperButton
+                onClick={request}>
+                CLICK
+            </SuperButton>
+            <SuperCheckbox
+                checked={checked}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                    setChecked(e.currentTarget.checked)
+                }}
+            />
         </div>
     </div>)
 }
