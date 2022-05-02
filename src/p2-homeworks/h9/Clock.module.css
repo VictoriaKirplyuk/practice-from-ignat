@@ -1,0 +1,23 @@
+.stringTime {
+    grid-area: time;
+    color: #800080;
+    font-weight: bold;
+    margin-left: 5px;
+    width: 90px;
+    height: 10px;
+}
+
+.stringDate {
+    grid-area: date;
+    color: #6A5ACD;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.timeGroup {
+    display: grid;
+    height: 50px;
+    grid-template-areas:"time"
+                        "date";
+}

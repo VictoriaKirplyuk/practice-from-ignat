@@ -1,0 +1,14 @@
+.loadingForm {
+    display: grid;
+    width: 150px;
+    margin-bottom: 50px
+}
+
+.preImg {
+    width: 50px;
+    justify-self: center;
+}
+
+.preload {
+    justify-self: center;
+}

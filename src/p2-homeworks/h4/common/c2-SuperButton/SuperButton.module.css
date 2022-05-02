@@ -1,6 +1,4 @@
 .default {
-    width: 90px;
-    height: 30px;
     margin: 5px;
     appearance: none;
     border: 0;
@@ -22,8 +20,6 @@
 }
 
 .red {
-    width: 90px;
-    height: 30px;
     appearance: none;
     border: 0;
     border-radius: 5px;

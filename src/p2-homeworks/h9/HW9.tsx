@@ -5,7 +5,7 @@ function HW9() {
     return (
         <div>
             <hr/>
-            homeworks 9
+            <div style={{color: '#800080', fontWeight: 'bold', marginBottom:"30px"}}>homeworks 9</div>
 
             {/*should work (должно работать)*/}
             <Clock/>
