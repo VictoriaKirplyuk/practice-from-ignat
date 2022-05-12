@@ -3,6 +3,7 @@ import s from "./HW12.module.css";
 import {useDispatch, useSelector} from "react-redux";
 import {changeThemeC} from "./bll/themeReducer";
 import {AppStoreType} from "../h10/bll/store";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 function HW12() {
 
@@ -18,9 +19,9 @@ function HW12() {
             <hr/>
             <span className={s[theme + '-text']}>
                 homeworks 12
-                <input type='button' value='Dark theme' onClick={() => onChangeCallback('dark')}/>
-                <input type='button' value='Red theme' onClick={() => onChangeCallback('red')}/>
-                <input type='button' value='Some theme' onClick={() => onChangeCallback('some')}/>
+                <SuperButton onClick={() => onChangeCallback('dark')}>Dark theme</SuperButton>
+                <SuperButton onClick={() => onChangeCallback('red')}>Red theme</SuperButton>
+                <SuperButton onClick={() => onChangeCallback('some')}>Some theme</SuperButton>
             </span>
             <hr/>
         </div>

@@ -32,7 +32,6 @@ function HW10() {
                     : (<div className={s.preload}><SuperButton onClick={setLoading}>set loading...</SuperButton></div>)
                 }
             </div>
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}

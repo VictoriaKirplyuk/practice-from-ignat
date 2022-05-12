@@ -3,7 +3,7 @@
 }
 
 .dark-text {
-    color: whitesmoke;
+    color: black;
 }
 
 .red {
@@ -11,13 +11,13 @@
 }
 
 .red-text {
-    color: whitesmoke;
+    color: black;
 }
 
 .some {
-    background: DarkGreen;
+    background: MediumAquamarine;
 }
 
 .some-text {
-    color: whitesmoke;
+    color: black;
 }

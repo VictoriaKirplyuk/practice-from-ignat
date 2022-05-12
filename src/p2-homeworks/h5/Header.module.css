@@ -1,9 +1,9 @@
 .nav {
     display: flex;
-    width: 400px;
+    width: 350px;
 
     transition-duration: 1000ms;
-    transform: translate(-330px);
+    transform: translate(-300px);
 }
 
 .link {
